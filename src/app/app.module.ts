@@ -17,7 +17,7 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NopagefoundComponent    
+    NopagefoundComponent,
   ],
   imports: [
     BrowserModule,

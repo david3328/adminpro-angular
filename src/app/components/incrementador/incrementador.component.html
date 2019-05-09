@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">{{nombre}}</h4>
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-secondaty" type="button" (click)="cambiarValor(-5)">
+          <i class="mdi mdi-minus"></i>
+        </button>
+      </span>
+      <input 
+        #txtProgreso 
+        type="number" 
+        class="form-control" 
+        name="progreso" 
+        [(ngModel)]="progreso"
+        (ngModelChange)="onChanges($event)">
+      <span class="input-group-btn">
+        <button class="btn btn-secondaty" type="button" (click)="cambiarValor(+5)">
+          <i class="mdi mdi-plus"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
